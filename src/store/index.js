@@ -19,6 +19,7 @@ export default createStore({
         let response = await axios.get(dataUrl);
 
         commit("GET_PRODUCTS", response.data);
+        console.log(response.data);
       } catch (err) {
         console.log(err);
       }
