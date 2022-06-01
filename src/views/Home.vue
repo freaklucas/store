@@ -1,6 +1,5 @@
 <template>
   <div class="justify-center flex bg-yellow-300 items-center h-screen">
-    <div class="text-4xl">Hello 👋🏼</div>
 
     <div class="flex flex-col justify-center items-center">
       <h2
@@ -8,7 +7,7 @@
         v-for="product in products"
         :key="product.id"
       >
-        {{ product.name }}
+        {{ product.png }}
       </h2>
     </div>
   </div>

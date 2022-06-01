@@ -15,7 +15,7 @@ export default createStore({
   actions: {
     getProducts: async function ({ commit }) {
       try {
-        let dataUrl = `https://jsonplaceholder.typicode.com/users`;
+        let dataUrl = `https://fakestoreapi.com/products`;
         let response = await axios.get(dataUrl);
 
         commit("GET_PRODUCTS", response.data);
