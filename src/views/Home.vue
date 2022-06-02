@@ -1,14 +1,5 @@
 <template>
-  <div class="justify-center flex bg-yellow-300 items-center h-screen">
-    <div class="flex flex-col justify-center items-center">
-      <div
-        class="font-semibold text-2xl"
-        v-for="product in products"
-        :key="product.id"
-      >
-        <img :src="product.image" alt="imagem dos produtos" />
-      </div>
-    </div>
+  <div class="justify-center flex items-center h-screen">
     <section class="bg-white dark:bg-gray-900">
       <div class="container px-6 py-8 mx-auto">
         <div class="lg:flex lg:-mx-2">
@@ -43,6 +34,8 @@
             </div>
 
             <div
+              v-for="product in products"
+              :key="product.id"
               class="
                 grid grid-cols-1
                 gap-8
@@ -64,8 +57,8 @@
               >
                 <img
                   class="object-cover w-full rounded-md h-72 xl:h-80"
-                  src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
-                  alt="T-Shirt"
+                  :src="product.image"
+                  alt="imagem dos produtos"
                 />
                 <h4
                   class="
