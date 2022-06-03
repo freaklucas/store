@@ -13,19 +13,7 @@
                 dark:text-gray-300
                 hover:underline
               "
-              >Jackets & Coats</a
-            >
-
-            <a
-              href="#"
-              class="
-                block
-                font-medium
-                text-gray-500
-                dark:text-gray-300
-                hover:underline
-              "
-              >Blazers & Suits</a
+              >men's clothing</a
             >
             <a
               href="#"
@@ -36,7 +24,7 @@
                 dark:text-gray-300
                 hover:underline
               "
-              >Jeans</a
+              >women's clothing</a
             >
             <a
               href="#"
@@ -47,7 +35,18 @@
                 dark:text-gray-300
                 hover:underline
               "
-              >Trousers</a
+              >jewelery</a
+            >
+            <a
+              href="#"
+              class="
+                block
+                font-medium
+                text-gray-500
+                dark:text-gray-300
+                hover:underline
+              "
+              >electronics</a
             >
           </div>
           <div class="mt-6 lg:mt-0 lg:px-2 lg:w-4/5">
@@ -362,12 +361,16 @@ export default {
   name: "Home",
   components: {},
 
+  methods: {
+    removeDuplicates() {},
+  },
+
   created: function () {
     this.$store.dispatch("getProducts");
   },
 
   computed: {
-    ...mapState(["products"]),
+    ...mapState(["products", "categories"]),
   },
 };
 </script>
