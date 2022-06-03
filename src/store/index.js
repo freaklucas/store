@@ -5,11 +5,15 @@ import axios from "axios";
 export default createStore({
   state: {
     products: [],
+    categories: [],
   },
 
   mutations: {
     GET_PRODUCTS: function (state, payload) {
       state.products = payload;
+    },
+    GET_CATEGORIES: function (state, payload) {
+      state.categories = payload;
     },
   },
   actions: {
@@ -19,6 +23,8 @@ export default createStore({
         let response = await axios.get(dataUrl);
 
         commit("GET_PRODUCTS", response.data);
+        commit("GET_CATEGORIES", response.data);
+
         console.log(response.data);
       } catch (err) {
         console.log(err);
@@ -28,6 +34,9 @@ export default createStore({
   getters: {
     listProducts(state) {
       return state.products.length;
+    },
+    listCategories(state) {
+      return state.categories.length;
     },
   },
   modules: {},

@@ -15,39 +15,7 @@
               "
               >Jackets & Coats</a
             >
-            <a
-              href="#"
-              class="
-                block
-                font-medium
-                text-gray-500
-                dark:text-gray-300
-                hover:underline
-              "
-              >Hoodies</a
-            >
-            <a
-              href="#"
-              class="
-                block
-                font-medium
-                text-blue-600
-                dark:text-blue-500
-                hover:underline
-              "
-              >T-shirts & Vests</a
-            >
-            <a
-              href="#"
-              class="
-                block
-                font-medium
-                text-gray-500
-                dark:text-gray-300
-                hover:underline
-              "
-              >Shirts</a
-            >
+
             <a
               href="#"
               class="
@@ -80,28 +48,6 @@
                 hover:underline
               "
               >Trousers</a
-            >
-            <a
-              href="#"
-              class="
-                block
-                font-medium
-                text-gray-500
-                dark:text-gray-300
-                hover:underline
-              "
-              >Shorts</a
-            >
-            <a
-              href="#"
-              class="
-                block
-                font-medium
-                text-gray-500
-                dark:text-gray-300
-                hover:underline
-              "
-              >Underwear</a
             >
           </div>
           <div class="mt-6 lg:mt-0 lg:px-2 lg:w-4/5">
