@@ -11,9 +11,10 @@
           uppercase
         "
       >
-        <p class="text-gray-500 dark:text-gray-300">6 Items</p>
+        <p class="text-gray-500 dark:text-gray-300">
+          {{ products.length }} Produtos
+        </p>
         <div class="flex items-center">
-          <p class="text-gray-500 dark:text-gray-300">Sort</p>
           <select
             class="
               font-medium
