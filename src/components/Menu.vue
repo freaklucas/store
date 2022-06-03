@@ -1,0 +1,50 @@
+<template>
+  <div class="flex justify-center mr-12 mt-12">
+    <div class="space-y-3 lg:w-1/5 lg:px-2 lg:space-y-4">
+      <a
+        href="#"
+        class="
+          block
+          font-medium
+          text-gray-500
+          dark:text-gray-300
+          hover:underline
+        "
+        >men's clothing</a
+      >
+      <a
+        href="#"
+        class="
+          block
+          font-medium
+          text-gray-500
+          dark:text-gray-300
+          hover:underline
+        "
+        >women's clothing</a
+      >
+      <a
+        href="#"
+        class="
+          block
+          font-medium
+          text-gray-500
+          dark:text-gray-300
+          hover:underline
+        "
+        >jewelery</a
+      >
+      <a
+        href="#"
+        class="
+          block
+          font-medium
+          text-gray-500
+          dark:text-gray-300
+          hover:underline
+        "
+        >electronics</a
+      >
+    </div>
+  </div>
+</template>

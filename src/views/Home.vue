@@ -3,52 +3,7 @@
     <section class="bg-white dark:bg-gray-900">
       <div class="container px-6 py-8 mx-auto">
         <div class="lg:flex lg:-mx-2">
-          <div class="space-y-3 lg:w-1/5 lg:px-2 lg:space-y-4">
-            <a
-              href="#"
-              class="
-                block
-                font-medium
-                text-gray-500
-                dark:text-gray-300
-                hover:underline
-              "
-              >men's clothing</a
-            >
-            <a
-              href="#"
-              class="
-                block
-                font-medium
-                text-gray-500
-                dark:text-gray-300
-                hover:underline
-              "
-              >women's clothing</a
-            >
-            <a
-              href="#"
-              class="
-                block
-                font-medium
-                text-gray-500
-                dark:text-gray-300
-                hover:underline
-              "
-              >jewelery</a
-            >
-            <a
-              href="#"
-              class="
-                block
-                font-medium
-                text-gray-500
-                dark:text-gray-300
-                hover:underline
-              "
-              >electronics</a
-            >
-          </div>
+          <Menu />
           <div class="mt-6 lg:mt-0 lg:px-2 lg:w-4/5">
             <div
               class="
@@ -357,9 +312,11 @@
 <script>
 import { mapState } from "vuex";
 
+import Menu from "../components/Menu.vue";
+
 export default {
   name: "Home",
-  components: {},
+  components: { Menu },
 
   methods: {
     removeDuplicates() {},
