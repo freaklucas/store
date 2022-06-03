@@ -4,7 +4,7 @@
       <div class="container px-6 py-8 mx-auto">
         <div class="lg:flex lg:-mx-2">
           <Menu />
-          <Cart />
+          <Card />
         </div>
       </div>
     </section>
@@ -15,11 +15,11 @@
 import { mapState } from "vuex";
 
 import Menu from "../components/Menu.vue";
-import Cart from "../components/Cart.vue";
+import Card from "../components/Card.vue";
 
 export default {
   name: "Home",
-  components: { Menu, Cart },
+  components: { Menu, Card },
 
   created: function () {
     this.$store.dispatch("getProducts");
