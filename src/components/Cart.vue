@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex ml-14">
     <div class="mt-6 lg:mt-0 lg:px-2 lg:w-4/5">
       <div
         class="
