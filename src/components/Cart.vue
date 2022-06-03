@@ -25,8 +25,8 @@
             "
           >
             <option value="#">Recommended</option>
-            <option value="#">Size</option>
-            <option value="#">Price</option>
+            <option value="#">Menor preço</option>
+            <option value="#">Maior preço</option>
           </select>
         </div>
       </div>
@@ -59,9 +59,9 @@
             alt="imagem dos produtos"
           />
           <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">
-            Printed T-shirt
+            {{ product.title }}
           </h4>
-          <p class="text-blue-500">$12.55</p>
+          <p class="text-blue-500">{{ product.price }}</p>
 
           <button
             class="
