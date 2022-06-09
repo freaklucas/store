@@ -35,12 +35,13 @@
         v-for="product in products"
         :key="product.id"
         class="
-          grid grid-cols-2
-          gap-2
-          mt-8
-          md:grid-cols-2
-          lg:grid-cols-3
-          xl:grid-cols-3
+          flex
+          items-center
+          justify-between
+          text-sm
+          tracking-widest
+          uppercase
+          mt-4
         "
       >
         <div
