@@ -10,14 +10,14 @@
         hover:translate-x-2
         text-3xl
         font-poppins
-        mt-8
+        mt-14
         text-gray-500
       "
     >
       {{ title }}
     </h1>
 
-    <img :src="image" class="w-14" />
+    <img :src="image" class="w-14 ml-14 mt-4 sm:ml-20" />
   </div>
 </template>
 
