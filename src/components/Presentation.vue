@@ -7,7 +7,6 @@
         justify-center
         mb-4
         dark:text-gray-300
-        hover:translate-x-2
         text-3xl
         font-poppins
         mt-14
