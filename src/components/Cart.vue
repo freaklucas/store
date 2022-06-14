@@ -1,10 +1,8 @@
 <template>
   <div class="flex">
-    <!-- component -->
     <div class="container">
       <div class="mt-5">
         <div class="w-1/2 mx-auto bg-white rounded-md">
-          <!-- first -->
           <div class="flex flex-col justify-center items-center">
             <h6 class="text-black font-medium my-4">Order summart</h6>
             <div
@@ -86,23 +84,7 @@
                 Apply code
               </button>
             </div>
-            <div class="px-3 py-5 border-b-2 border-gray-200">
-              <button
-                class="
-                  min-w-full
-                  bg-gray-400
-                  font-semibold
-                  text-white
-                  px-2
-                  py-2
-                  rounded-md
-                "
-              >
-                Checkout
-              </button>
-            </div>
           </div>
-          <!-- end -->
         </div>
       </div>
     </div>
