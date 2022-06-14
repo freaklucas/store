@@ -6,6 +6,7 @@ export default createStore({
   state: {
     products: [],
     categories: [],
+    priceTotal: 0.002,
   },
 
   mutations: {
@@ -14,6 +15,9 @@ export default createStore({
     },
     GET_CATEGORIES: function (state, payload) {
       state.categories = payload;
+    },
+    GET_PRICE: function (state, payload) {
+      state.priceTotal = payload;
     },
   },
   actions: {
@@ -37,6 +41,9 @@ export default createStore({
     },
     listCategories(state) {
       return state.categories.length;
+    },
+    priceTotal(state) {
+      return state.priceTotal.value;
     },
   },
   modules: {},

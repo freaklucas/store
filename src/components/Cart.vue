@@ -92,5 +92,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    mapGetters() {
+      return {
+        cart: this.$store.getters.cart,
+      };
+    },
+  },
+};
 </script>
