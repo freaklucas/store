@@ -16,7 +16,7 @@
               "
             >
               <p class="text-gray-400 ml-4">Subtotal</p>
-              <p class="text-black mr-4">$2,650</p>
+              <p class="text-black mr-4">$ {{ priceTotal }}</p>
             </div>
             <div
               class="
@@ -92,13 +92,11 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   computed: {
-    mapGetters() {
-      return {
-        cart: this.$store.getters.cart,
-      };
-    },
+    ...mapState(["products", "priceTotal"]),
   },
 };
 </script>
